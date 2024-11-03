@@ -1,4 +1,3 @@
-<h3><b>An ongoing project on image generation task, Teammates will update changes when it will be finished.</b></h3>
+### **An ongoing project on image generation task. Teammates will update changes when it is finished.**
 
-
-<h2><b>Special thanks to <a href="https://github.com/IsNoobgrammer">SedGram</a> for his valuable contribution in this project.</b></h2>
+## **Special thanks to [SedGram](https://github.com/IsNoobgrammer) for his valuable contribution to this project.**

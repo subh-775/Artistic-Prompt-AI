@@ -1,6 +1,6 @@
 # 🎨 AI-Powered Poster Generator with Perfect Text Placement
 
-This project aims to develop an **AI model** that generates visually appealing images, such as movie posters, with unstructured, colorful, and contextually appropriate **visual text placement**. Unlike current models, which struggle with issues like incorrect text placement or spelling errors, our trained model will focus on learning **precise text placement and styling** by leveraging advanced AI techniques and a robust training dataset.
+We are designing a machine learning model capable of generating images that **accurately incorporate specified text or lettering within the image**. Existing image-generation models often struggle with proper text placement, either misplacing the text or introducing spelling errors. Our goal is to train the model to master the art of **placing text accurately and aesthetically within generated images**. Once accomplished, this innovation will enable seamless creation of visually appealing outputs such as **poster designs** and **template fills**, all from a single prompt.
 
 ---
 

@@ -23,7 +23,7 @@ Our project tackles these challenges by combining **state-of-the-art AI models**
 We will use **[black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)** model for **image generation**. This serves as the foundation for creating visually stunning movie poster-like images.
 
 ### 2. **🔧 Conditional Image Control**
-To control the image parameters (such as Resolution, Strength, DDIM sampling, seed, etc.), we use the **[lllyasviel/ControlNet](https://github.com/lllyasviel/ControlNet)** framework. ControlNet ensures that the AI understands the layout constraints required for text placement.
+To control the image parameters (such as Resolution, Strength, DDIM sampling, seed, etc.), we use the **[lllyasviel/ControlNet](https://github.com/lllyasviel/ControlNet)** framework. ControlNet ensures that the AI understands the layout constraints required for text Understanding.
 
 ### 3. **🛠️ Data Collection and Preprocessing**
 We curated our dataset using the following steps:

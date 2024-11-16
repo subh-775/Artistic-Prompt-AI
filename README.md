@@ -6,9 +6,9 @@ We are designing a machine learning model capable of generating images that **ac
 
 ## 🚀 Motivation
 
-Despite advancements in AI image generation, there are currently **no large language models (LLMs)** or image-generation models capable of achieving perfect text placement in images like movie posters. Existing models often:
+Despite advancements in AI image generation, there are currently **no large language models (LLMs)** or image-generating models capable of achieving perfect text placement in images like movie posters. Existing models often:
 - Make **mistakes in text placement**, leading to poor visual aesthetics.
-- Introduce **spelling or formatting errors** in the text.  
+- or Introduce **spelling or formatting errors** in the text.  
 
 Our project tackles these challenges by combining **state-of-the-art AI models** and a carefully curated training pipeline to develop a model that excels in:
 1. Generating high-quality images.

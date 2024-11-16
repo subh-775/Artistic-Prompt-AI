@@ -48,7 +48,7 @@ So far, we have:
 3. Created lineart-style conditional images using **lllyasviel/Annotators**.
 
 ### Dataset Structure:
-| **🖼️ Image**         | **✍️ Caption**                                                                 | **🖊️ Conditional Image**      |
+| **🖼️ image**         | **✍️ caption**                                                                 | **🖊️ conditional image**      |
 |-----------------------|-----------------------------------------------------------------------------|-------------------------------|
 | Movie poster image    | A description of the poster, including characters, text, colors, etc.      | Lineart representation        |
 

@@ -32,11 +32,14 @@ We curated our dataset using the following steps:
 - **Conditional Images**: We generated lineart-style conditional images for each poster using the **[lllyasviel/Annotators](https://github.com/lllyasviel/ControlNet/blob/main/annotator/README.md)** model. These conditional images will play a key role during training by guiding the AI on text placement.
 - **Final Dataset**: <a href="https://huggingface.co/datasets/Subh775/Conditional_Movies_Poster_Dataset">Here</a> is the Final dataset so formed.
 
-### 4. **🧠 Model Training(Not yet done)**
+### 4. **🧠 Model Training**
 Our AI model will:
 - Learn to generate images using the **FLUX.1-dev** model.
 - Learn text placement from the conditional lineart images and captions.
 - Optimize visual text styling and accuracy through advanced training techniques.
+
+  > **Note**: Training is not yet done. An information regarding weights and biases will be added as development continues.
+
 
 ---
 
@@ -60,9 +63,6 @@ So far, we have:
 2. Fine-tune the AI to ensure it handles unstructured text formats with high precision.
 3. Optimize the AI for generating movie-poster-like images based on user-defined prompts.
    
- > **Note**: Training is not yet done. An information regarding weights and biases will be added as development continues.
-
-
 ---
 
 ## 🛠️ Tools & Frameworks

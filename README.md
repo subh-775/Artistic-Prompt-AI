@@ -31,7 +31,7 @@ We curated our dataset using the following steps:
 - **Captions Generation**: Captions were automatically generated for each image using the **[vikhyatk/moondream2](https://huggingface.co/vikhyatk/moondream2)** model, which provided detailed descriptions of the posters.
 - **Conditional Images**: We generated lineart-style conditional images for each poster using the **[lllyasviel/Annotators](https://github.com/lllyasviel/ControlNet/blob/main/annotator/README.md)** model. These conditional images will play a key role during training by guiding the AI on text placement.
 
-### 4. **🧠 Model Training**
+### 4. **🧠 Model Training(later)**
 Our AI model will:
 - Learn to generate images using the **FLUX.1-dev** model.
 - Learn text placement from the conditional lineart images and captions.

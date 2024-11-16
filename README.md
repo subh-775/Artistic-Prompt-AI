@@ -45,7 +45,7 @@ Our AI model will:
 So far, we have:
 1. Extracted a large dataset of movie posters.
 2. Generated detailed captions for each poster using **moondream2**.
-3. Created lineart-style conditional images using **lllyasviel/Annotators**.
+3. Created lineart-style conditional images using **lllyasviel/Annotators** **ControlNet 1.1**.
 
 ### Dataset Structure:
 | **🖼️ image**         | **✍️ caption**                                                                 | **🖊️ conditional image**      |
@@ -70,7 +70,7 @@ So far, we have:
 - **Image Generation**: [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)  
 - **Control Parameters**: [ControlNet](https://github.com/lllyasviel/ControlNet)  
 - **Caption Generation**: [moondream2](https://huggingface.co/vikhyatk/moondream2)  
-- **Conditional Image Generation**: [Annotators](https://github.com/lllyasviel/ControlNet/blob/main/annotator/README.md)
+- **Conditional Image Generation**: [Annotators](https://github.com/lllyasviel/ControlNet-v1-1-nightly/blob/main/README.md#controlnet-11-lineart)
 
 ---
 

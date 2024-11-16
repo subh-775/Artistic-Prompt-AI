@@ -84,7 +84,7 @@ This project is a work in progress. Contributions are welcome! If you'd like to 
 
 ## 🔗 More Information
 
-More information about the project is available [**Here**](https://huggingface.co/Subh775) and [**Here**](https://huggingface.co/fhai50032).
+More information about the project is available at  [**subh-775**](https://huggingface.co/Subh775) and [**fhai50032**](https://huggingface.co/fhai50032).
 
 ---
 

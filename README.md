@@ -1,10 +1,10 @@
-# AI-Powered Poster Generator with Perfect Text Placement
+# 🎨 AI-Powered Poster Generator with Perfect Text Placement
 
 This project aims to develop an **AI model** that generates visually appealing images, such as movie posters, with unstructured, colorful, and contextually appropriate **visual text placement**. Unlike current models, which struggle with issues like incorrect text placement or spelling errors, our trained model will focus on learning **precise text placement and styling** by leveraging advanced AI techniques and a robust training dataset.
 
 ---
 
-## Motivation
+## 🚀 Motivation
 
 Despite advancements in AI image generation, there are currently **no large language models (LLMs)** or image-generation models capable of achieving perfect text placement in images like movie posters. Existing models often:
 - Make **mistakes in text placement**, leading to poor visual aesthetics.
@@ -17,21 +17,21 @@ Our project tackles these challenges by combining **state-of-the-art AI models**
 
 ---
 
-## Approach
+## ⚙️ Approach
 
-### 1. **Image Generation**
+### 1. **🎥 Image Generation**
 We use the **[black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)** model for **image generation**. This serves as the foundation for creating visually stunning movie poster-like images.
 
-### 2. **Conditional Image Control**
-To control the image parameters (such as Resolution, Strength, DDIM sampling, seed,etc), we use the **[lllyasviel/ControlNet](https://github.com/lllyasviel/ControlNet)** framework. ControlNet ensures that the AI understands the layout constraints required for text placement.
+### 2. **🔧 Conditional Image Control**
+To control the image parameters (such as Resolution, Strength, DDIM sampling, seed, etc.), we use the **[lllyasviel/ControlNet](https://github.com/lllyasviel/ControlNet)** framework. ControlNet ensures that the AI understands the layout constraints required for text placement.
 
-### 3. **Data Collection and Preprocessing**
+### 3. **🛠️ Data Collection and Preprocessing**
 We curated our dataset using the following steps:
 - **Data Collection**: Extracted thousands of movie poster images from various sources using techniques like direct search and web scraping.
-- **Captions Generation**: Captions were automatically generated for each image using the **[vikhyatk/moondream2](https://huggingface.co/vikhyatk/moondream2)** model, which provided detailed description of the posters.
+- **Captions Generation**: Captions were automatically generated for each image using the **[vikhyatk/moondream2](https://huggingface.co/vikhyatk/moondream2)** model, which provided detailed descriptions of the posters.
 - **Conditional Images**: We generated lineart-style conditional images for each poster using the **[lllyasviel/Annotators](https://github.com/lllyasviel/ControlNet/blob/main/annotator/README.md)** model. These conditional images will play a key role during training by guiding the AI on text placement.
 
-### 4. **Model Training**
+### 4. **🧠 Model Training**
 Our AI model will:
 - Learn to generate images using the **FLUX.1-dev** model.
 - Learn text placement from the conditional lineart images and captions.
@@ -39,7 +39,7 @@ Our AI model will:
 
 ---
 
-## Current Progress
+## 📈 Current Progress
 
 So far, we have:
 1. Extracted a large dataset of movie posters.
@@ -47,13 +47,13 @@ So far, we have:
 3. Created lineart-style conditional images using **lllyasviel/Annotators**.
 
 ### Dataset Structure:
-| **Image**         | **Caption**                                                                 | **Conditional Image**      |
-|--------------------|-----------------------------------------------------------------------------|-----------------------------|
-| Movie poster image | A description of the poster, including characters, text, colors, etc.      | Lineart representation      |
+| **🖼️ Image**         | **✍️ Caption**                                                                 | **🖊️ Conditional Image**      |
+|-----------------------|-----------------------------------------------------------------------------|-------------------------------|
+| Movie poster image    | A description of the poster, including characters, text, colors, etc.      | Lineart representation        |
 
 ---
 
-## Next Steps
+## 🔮 Next Steps
 
 1. Train the model on the curated dataset to learn accurate text placement and styling.
 2. Fine-tune the AI to ensure it handles unstructured text formats with high precision.
@@ -61,7 +61,7 @@ So far, we have:
 
 ---
 
-## Tools & Frameworks
+## 🛠️ Tools & Frameworks
 
 - **Image Generation**: [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)  
 - **Control Parameters**: [ControlNet](https://github.com/lllyasviel/ControlNet)  
@@ -70,7 +70,7 @@ So far, we have:
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 This project is a work in progress. Contributions are welcome! If you'd like to contribute:
 1. Fork the repository.
@@ -78,13 +78,13 @@ This project is a work in progress. Contributions are welcome! If you'd like to 
 
 ---
 
-## More Information
+## 🔗 More Information
 
 More information about the project is available [**Here**](https://huggingface.co/Subh775) and [**Here**](https://huggingface.co/fhai50032).
 
 ---
 
-## Acknowledgements
+## 🏆 Acknowledgements
 
 Special thanks to:
 - **[SedGram](https://github.com/IsNoobgrammer)** for his valuable contributions to this project.
@@ -94,8 +94,8 @@ Special thanks to:
 
 ---
 
-## License
+## 📜 License
 
-This project is licensed under the APACHE 2.0License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the APACHE 2.0 License. See the [LICENSE](LICENSE) file for details.
 
 > **Note**: Training and further refinements are in progress. Updates will be added as development continues.

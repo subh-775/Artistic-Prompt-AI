@@ -60,7 +60,7 @@ So far, we have:
 2. Fine-tune the AI to ensure it handles unstructured text formats with high precision.
 3. Optimize the AI for generating movie-poster-like images based on user-defined prompts.
    
- > **Note**: Training is not yet done. An information regarding weights updation Updates will be added as development continues.
+ > **Note**: Training is not yet done. An information regarding weights and biases will be added as development continues.
 
 
 ---

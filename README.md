@@ -30,7 +30,7 @@ We curated our dataset using the following steps:
 - **Data Collection**: Extracted thousands of movie poster images from various sources using techniques like search and web scraping and performed operations like removal of outliers, null entries and  invalid image.
 - **Captions Generation**: Captions were automatically generated for each image using the **[vikhyatk/moondream2](https://huggingface.co/vikhyatk/moondream2)** model, which provided detailed descriptions of the posters.
 - **Conditional Images**: We generated lineart-style conditional images for each poster using the **[lllyasviel/Annotators](https://github.com/lllyasviel/ControlNet/blob/main/annotator/README.md)** model. These conditional images will play a key role during training by guiding the AI on text placement.
-- **Final Dataset**: <a href="https://huggingface.co/datasets/Subh775/Conditional_Movies_Poster_Dataset">This</a> is the Final dataset so formed.
+- **Final Dataset**: <a href="https://huggingface.co/datasets/Subh775/Conditional_Movies_Poster_Dataset">Here</a> is the Final dataset so formed.
 
 ### 4. **🧠 Model Training(Not yet done)**
 Our AI model will:

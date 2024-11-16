@@ -91,7 +91,7 @@ More information about the project is available [**Here**](https://huggingface.c
 ## 🏆 Acknowledgements
 
 Special thanks to:
-- **[SedGram](https://github.com/IsNoobgrammer)** for his valuable contributions to this project.
+- **[fhai50032](https://github.com/IsNoobgrammer)** for his valuable contributions to this project.
 - **Black Forest Labs** for the **FLUX.1-dev** model.  
 - **lllyasviel** for ControlNet and Annotators, which made conditional image generation possible.  
 - **vikhyatk** for the **moondream2** model, enabling automated caption generation.

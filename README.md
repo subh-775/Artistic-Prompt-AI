@@ -1,6 +1,6 @@
 # 🎨 AI-Powered Poster Generator with Perfect Text Placement
 
-We are designing a machine learning model capable of generating images that **accurately incorporate specified text or lettering within the image**. Existing image-generation models often struggle with proper text placement, either misplacing the text or introducing spelling errors. Our goal is to train the model to master the art of **placing text accurately and aesthetically within generated images**. Once accomplished, this innovation will enable seamless creation of visually appealing outputs such as **poster designs** and **template fills**, all from a single prompt.
+We are designing a machine learning model capable of generating images that **accurately incorporate specified text or lettering within the image**. Existing image-generating models often struggle with proper text placement, either misplacing the text or introducing spelling errors. Our goal is to train the model to master the art of **placing text accurately and aesthetically within generated images**. Once accomplished, this innovation will enable seamless creation of visually appealing outputs such as **poster designs** and **template fills**, all from a single prompt.
 
 ---
 

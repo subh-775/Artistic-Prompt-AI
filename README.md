@@ -23,18 +23,18 @@ Our project tackles these challenges by combining **state-of-the-art AI models**
 We will use **[`black-forest-labs/FLUX.1-dev`](https://huggingface.co/black-forest-labs/FLUX.1-dev)** model for **image generation**. This serves as the foundation for creating visually stunning movie poster-like images.
 
 ### 2. **🔧 Conditional Image Control**
-To control the image parameters (such as Resolution, Strength, DDIM sampling, seed, etc.), we use the **[lllyasviel/ControlNet](https://github.com/lllyasviel/ControlNet)** framework. ControlNet ensures that the AI understands the layout constraints required for text Understanding.
+To control the image parameters (such as Resolution, Strength, DDIM sampling, seed, etc.), we use the **[`lllyasviel/ControlNet`](https://github.com/lllyasviel/ControlNet)** framework. ControlNet ensures that the AI understands the layout constraints required for text Understanding.
 
 ### 3. **🛠️ Data Collection and Preprocessing**
 We curated our dataset using the following steps:
 - **Data Collection**: Extracted thousands of movie poster images from various sources using techniques like search and web scraping and performed operations like removal of outliers, null entries and  invalid image.
-- **Captions Generation**: Captions were automatically generated for each image using the **[vikhyatk/moondream2](https://huggingface.co/vikhyatk/moondream2)** model, which provided detailed descriptions of the posters.
-- **Conditional Images**: We generated lineart-style conditional images for each poster using the **[lllyasviel/ControlNet-v1-1-nightly](https://github.com/lllyasviel/ControlNet-v1-1-nightly/blob/main/README.md#controlnet-11-lineart)** model. These conditional images will play a key role during training by guiding the AI on text placement.
+- **Captions Generation**: Captions were automatically generated for each image using the **[`vikhyatk/moondream2`](https://huggingface.co/vikhyatk/moondream2)** model, which provided detailed descriptions of the posters.
+- **Conditional Images**: We generated lineart-style conditional images for each poster using the **[`lllyasviel/ControlNet-v1-1-nightly`](https://github.com/lllyasviel/ControlNet-v1-1-nightly/blob/main/README.md#controlnet-11-lineart)** model. These conditional images will play a key role during training by guiding the AI on text placement.
 - **Final Dataset**: <a href="https://huggingface.co/datasets/Subh775/Conditional_Movies_Poster_Dataset">Here</a> is the Final dataset so formed.
 
 ### 4. **🧠 Model Training**
 Our AI model will:
-- Learn to generate images using the **FLUX.1-dev** model.
+- Learn to generate images using the **`FLUX.1-dev`** model.
 - Learn text placement from the conditional lineart images and captions.
 - Optimize visual text styling and accuracy through advanced training techniques.
 
@@ -67,10 +67,10 @@ So far, we have:
 
 ## 🛠️ Tools & Frameworks
 
-- **Image Generation**: [FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)  
-- **Control Parameters**: [ControlNet](https://github.com/lllyasviel/ControlNet)  
-- **Caption Generation**: [moondream2](https://huggingface.co/vikhyatk/moondream2)  
-- **Conditional Image Generation**: [Annotators](https://github.com/lllyasviel/ControlNet-v1-1-nightly/blob/main/README.md#controlnet-11-lineart)
+- **Image Generation**: [`FLUX.1-dev`](https://huggingface.co/black-forest-labs/FLUX.1-dev)  
+- **Control Parameters**: [`ControlNet`](https://github.com/lllyasviel/ControlNet)  
+- **Caption Generation**: [`moondream2`](https://huggingface.co/vikhyatk/moondream2)  
+- **Conditional Image Generation**: [`Lineart`](https://github.com/lllyasviel/ControlNet-v1-1-nightly/blob/main/README.md#controlnet-11-lineart)
 
 ---
 
@@ -92,9 +92,9 @@ More information about the project is available at  [**subh-775**](https://huggi
 
 Special thanks to:
 - **[fhai50032](https://github.com/IsNoobgrammer)** for his valuable contributions to this project.
-- **Black Forest Labs** for the **FLUX.1-dev** model.  
-- **lllyasviel** for ControlNet and Annotators, which made conditional image generation possible.  
-- **vikhyatk** for the **moondream2** model, enabling automated caption generation.
+- **`Black Forest Labs`** for the **`FLUX.1-dev`** model.  
+- **`lllyasviel`** for ControlNet and Annotators, which made conditional image generation possible.  
+- **`vikhyatk`** for the **`moondream2`** model, enabling automated caption generation.
 
 ---
 

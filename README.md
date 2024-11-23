@@ -1,5 +1,5 @@
-<p align="left">
-     <img src="https://readme-typing-svg.demolab.com/?lines=🎨%20AI-Powered%20Poster%20Generator&font=fira%20Code&center=true&width=600&height=70&color=ee5149&vCenter=true&pause=2500&size=20" />
+<p align="center">
+     <img src="https://readme-typing-svg.demolab.com/?lines=🎨%20AI-Powered%20Poster%20Generator&font=fira%20Code&center=true&width=600&height=700&color=ee5149&vCenter=true&pause=2500&size=20" />
 </p>
 
 # 🎨 AI-Powered Poster Generator

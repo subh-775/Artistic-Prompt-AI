@@ -1,6 +1,7 @@
 <p align="left">
     <img src="https://readme-typing-svg.demolab.com/?lines=🎨%20Revolutionize%20Design%20with%20AI!;🚀%20AI-Powered%20Poster%20Generator;✨%20Create%20Masterpieces%20in%20Seconds!&font=Fira%20Code&align=left&width=1000&height=80&color=f2c358&vCenter=true&pause=2000&size=40" />
 </p>
+
 # 🎨 AI-Powered Poster Generator
 
 We are designing a machine learning model capable of generating images that **accurately incorporate specified text or lettering within the image**. Existing image-generating models often struggle with proper text placement, either misplacing the text or introducing spelling errors. Our goal is to train the model to master the art of **placing text accurately and aesthetically within generated images**. Once accomplished, this innovation will enable seamless creation of visually appealing outputs such as **poster designs** and **template fills**, all from a single prompt.

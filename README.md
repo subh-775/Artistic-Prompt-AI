@@ -1,9 +1,5 @@
-<p align="center">
-     <img src="https://readme-typing-svg.demolab.com/?lines=🎨%20AI-Powered%20Poster%20Generator&font=fira%20Code&center=true&width=950&height=70&color=ee5149&vCenter=true&pause=2500&size=40" />
-</p>
-
-<p align="center">
-    <img src="https://readme-typing-svg.demolab.com/?lines=🎨%20Revolutionize%20Design%20with%20AI!;🚀%20AI-Powered%20Poster%20Generator;✨%20Create%20Masterpieces%20in%20Seconds!&font=Fira%20Code&center=true&width=1000&height=80&color=EE5149&vCenter=true&pause=2000&size=40" />
+<p align="left">
+    <img src="https://readme-typing-svg.demolab.com/?lines=🎨%20Revolutionize%20Design%20with%20AI!;🚀%20AI-Powered%20Poster%20Generator;✨%20Create%20Masterpieces%20in%20Seconds!&font=Fira%20Code&align=left&width=1000&height=80&color=EE5149&vCenter=true&pause=2000&size=40" />
 </p>
 
 # 🎨 AI-Powered Poster Generator

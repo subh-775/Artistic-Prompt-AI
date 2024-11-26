@@ -44,9 +44,9 @@ Our AI model was trained using:
 
 ---
 
-## TypeScript
+# TypeScript
 
-`!accelerate launch train_controlnet_flux.py \
+`[!accelerate launch train_controlnet_flux.py \
     --pretrained_model_name_or_path="black-forest-labs/FLUX.1-dev" \
     --dataset_name="fhai50032/ControlNet-Poster" \
     --conditioning_image_column="conditional_image" \
@@ -67,16 +67,18 @@ Our AI model was trained using:
     --checkpointing_steps 100 \
     --max_train_samples 3000 \
     --use_adafactor \
-    --push_to_hub`
+    --push_to_hub]`
 
-## 📈 Progress Achieved
+## 🔍 Training Results
 
 We successfully trained the model on a **small batch** of our dataset using an **NVIDIA A100 GPU**. Although the model is not pure perfect, still it is capable of placing text within images with a basic level of aesthetic appeal.
 
-### 🔍 Training Results
+## 🔍 Training Results
 
-#### 📉 Loss Graph
-The training loss over 250 steps:
+## 📉 Loss Graph
+The training loss over 250 steps with :
+🔵 as previous loss
+🟢 as new loss 
 
 ![img](test_imgs/loss.jpg)
 
@@ -89,7 +91,7 @@ The learning rate progression during training:
 ### ✨ Initial Generated Results
 The model generated the following results based on early training:
 
-`link="https://csvtu.ac.in/ew/pics/DigiVarsity.png"
+link="https://csvtu.ac.in/ew/pics/DigiVarsity.png"
 image=load_image(link)
 control_image = processor(image)
 controlnet_conditioning_scale = .65
@@ -106,7 +108,7 @@ image2 = pipe(
     guidance_scale=3.2,
 ).images[0]
 image2.save("image.jpg")
-load_image("image.jpg")`
+load_image("image.jpg")
 
 
 ![Output](test_imgs/output.png)  

@@ -4,15 +4,15 @@
 
 # 🎨 AI-Powered Poster Generator
 
-We've designed a machine learning model capable of generating images that **accurately incorporated specified text or lettering within the image**. Existing image-generating models often struggle with proper text placement, either misplacing the text or introducing spelling errors. Our goal is to train the model to master the art of **placing text accurately and aesthetically within generated images**. This innovation enables the seamless creation of visually appealing outputs such as **poster designs** and **template fills**, all from a single prompt.
+We've designed a machine learning model capable of generating images that **accurately incorporate specified text or lettering within the image**. Existing image-generation models often struggle with proper text placement, either misplacing the text or introducing spelling errors. Our goal is to train the model to master the art of **placing text accurately and aesthetically within generated images**. This innovation enables the seamless creation of visually appealing outputs such as **poster designs** and **template fills**, all from a single prompt.
 
 ---
 
 ## 🚀 Motivation
 
-Despite advancements in AI image generation, there are Currently, **no large language models (LLMs)** or image-generating models capable of achieving perfect text placement in images like movie posters. Existing models often:
+Despite advancements in AI image generation, **no large language models (LLMs)** or image-generating models are currently capable of achieving perfect text placement in images like movie posters. Existing models often:
 - Make **mistakes in text placement**, leading to poor visual aesthetics.
-- or Introducing **spelling or formatting errors** in the text.  
+- Introduce **spelling or formatting errors** in the text.
 
 Our project tackles these challenges by combining **state-of-the-art AI models** and a carefully curated training pipeline to develop a model that excels in:
 1. Generating high-quality images.
@@ -27,78 +27,55 @@ Our project tackles these challenges by combining **state-of-the-art AI models**
 We used the **[`black-forest-labs/FLUX.1-dev`](https://huggingface.co/black-forest-labs/FLUX.1-dev)** model for **image generation**. This served as the foundation for creating visually stunning poster-like images.
 
 ### 2. **🔧 Conditional Image Control**
-To control the image parameters (such as resolution, strength, DDIM sampling, seed, etc.), we utilized the **[`lllyasviel/ControlNet`](https://github.com/lllyasviel/ControlNet)** framework. ControlNet ensures that AI understood the layout constraints required for text.
+To control the image parameters (such as resolution, strength, DDIM sampling, seed, etc.), we utilized the **[`lllyasviel/ControlNet`](https://github.com/lllyasviel/ControlNet)** framework. ControlNet ensures that AI understands the layout constraints required for text.
 
 ### 3. **🛠️ Data Collection and Preprocessing**
 We curated our dataset using the following steps:
 - **Data Collection**: Extracted thousands of poster images from various sources and performed operations like removing outliers, null entries, and invalid images.
-- **Captions Generation**: Captions were automatically generated for each image using the **[`vikhyatk/moondream2`](https://huggingface.co/vikhyatk/moondream2)** model, which provided detailed descriptions of the posters.
+- **Caption Generation**: Captions were automatically generated for each image using the **[`vikhyatk/moondream2`](https://huggingface.co/vikhyatk/moondream2)** model, which provided detailed descriptions of the posters.
 - **Conditional Images**: We generated lineart-style conditional images for each poster using the **[`lllyasviel/ControlNet-v1-1-nightly`](https://github.com/lllyasviel/ControlNet-v1-1-nightly/blob/main/README.md#controlnet-11-lineart)** model. These conditional images guided the AI on text placement.
 
-## Structure of the dataset:
-| **🖼️ image**         | **✍️ caption**                                                                 | **🖊️ conditional image**      |
-|-----------------------|-----------------------------------------------------------------------------|-------------------------------|
-| Movie poster image    | A description of the poster, including characters, text, colors, etc.      | Lineart representation        |
+### Structure of the Dataset:
+| **🖼️ Image**        | **✍️ Caption**                                                             | **🖊️ Conditional Image**     |
+|----------------------|---------------------------------------------------------------------------|-------------------------------|
+| Movie poster image   | A description of the poster, including characters, text, colors, etc.    | Lineart representation        |
+
+- **Final Dataset**: You can view the dataset **[here](https://huggingface.co/datasets/fhai50032/ControlNet-Poster)**.
 
 ---
-
-- **Final Dataset**: you can view the dataset **[here](https://huggingface.co/datasets/fhai50032/ControlNet-Poster)**.
 
 ### 4. **🧠 Model Training**
 
-We've successfully trained the model on a **small batch** of our dataset using an **NVIDIA A100 GPU**. Although the model is not fully advanced(Due to GPU limitations), yet it is capable of placing text within images with a basic level of aesthetic appeal.
+We've successfully trained the model on a **small batch** of our dataset using an **NVIDIA A100 GPU**. While the model is not yet fully advanced (due to GPU limitations), it is capable of placing text within images with a basic level of aesthetic appeal.
 
 ---
-# TypeScript
-```bash 
-[!accelerate launch train_controlnet_flux.py \
-    --pretrained_model_name_or_path="black-forest-labs/FLUX.1-dev" \
-    --dataset_name="fhai50032/ControlNet-Poster" \
-    --conditioning_image_column="conditional_image" \
-    --image_column="image" \
-    --caption_column="caption" \
-    --output_dir="text-controlnet" \
-    --mixed_precision="bf16" \
-    --resolution=512 \
-    --learning_rate=3e-5 \
-    --max_train_steps=3000 \
-    --train_batch_size=2 \
-    --gradient_accumulation_steps=3 \
-    --report_to="wandb" \
-    --num_double_layers=4 \
-    --num_single_layers=2 \
-    --seed=42 \
-    --lr_scheduler "cosine" \
-    --checkpointing_steps 100 \
-    --max_train_samples 3000 \
-    --use_adafactor \
-    --push_to_hub]
-```
 
-# 🔍 Training Results
+## 🔍 Training Results
 
-## **📉 Loss Graph**
-The training loss over 250 steps with :
-🔵 as previous loss
-🟢 as new loss 
+### **📉 Loss Graph**
+The training loss over 250 steps:
+- 🔵 Previous loss
+- 🟢 New loss
 
-![img](test_imgs/loss.jpg)
+![Loss Graph](test_imgs/loss.jpg)
 
-## **🧭 Learning Rate**
+### **🧭 Learning Rate**
 The learning rate progression during training:
 
 ![Learning Rate Graph](test_imgs/learning_rate.jpg)
 
+---
 
-### ✨ Generated Results
+## ✨ Generated Results
 The model generated the following results based on early training:
-```
-link="https://csvtu.ac.in/ew/pics/DigiVarsity.png"
-image=load_image(link)
+
+```python
+link = "https://csvtu.ac.in/ew/pics/DigiVarsity.png"
+image = load_image(link)
 control_image = processor(image)
-controlnet_conditioning_scale = .65
+controlnet_conditioning_scale = 0.65
 width, height = control_image.size
-prompt = 'print a poster for a website with text "DIGIVARSITY" , make background as sunset mountain college '
+prompt = "print a poster for a website with text 'DIGIVARSITY', make background as sunset mountain college"
 image2 = pipe(
     prompt,
     control_image=control_image,

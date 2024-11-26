@@ -10,9 +10,9 @@ We've designed a machine learning model capable of generating images that **accu
 
 ## 🚀 Motivation
 
-Despite advancements in AI image generation, there are **no large language models (LLMs)** or image-generating models capable of achieving perfect text placement in images like movie posters. Existing models often:
+Despite advancements in AI image generation, there are Currently, **no large language models (LLMs)** or image-generating models capable of achieving perfect text placement in images like movie posters. Existing models often:
 - Make **mistakes in text placement**, leading to poor visual aesthetics.
-- Introducing **spelling or formatting errors** in the text.  
+- or Introducing **spelling or formatting errors** in the text.  
 
 Our project tackles these challenges by combining **state-of-the-art AI models** and a carefully curated training pipeline to develop a model that excels in:
 1. Generating high-quality images.
@@ -27,23 +27,27 @@ Our project tackles these challenges by combining **state-of-the-art AI models**
 We used the **[`black-forest-labs/FLUX.1-dev`](https://huggingface.co/black-forest-labs/FLUX.1-dev)** model for **image generation**. This served as the foundation for creating visually stunning poster-like images.
 
 ### 2. **🔧 Conditional Image Control**
-To control the image parameters (such as resolution, strength, DDIM sampling, seed, etc.), we utilized the **[`lllyasviel/ControlNet`](https://github.com/lllyasviel/ControlNet)** framework. ControlNet ensured that the AI understood the layout constraints required for text.
+To control the image parameters (such as resolution, strength, DDIM sampling, seed, etc.), we utilized the **[`lllyasviel/ControlNet`](https://github.com/lllyasviel/ControlNet)** framework. ControlNet ensures that AI understood the layout constraints required for text.
 
 ### 3. **🛠️ Data Collection and Preprocessing**
 We curated our dataset using the following steps:
 - **Data Collection**: Extracted thousands of poster images from various sources and performed operations like removing outliers, null entries, and invalid images.
 - **Captions Generation**: Captions were automatically generated for each image using the **[`vikhyatk/moondream2`](https://huggingface.co/vikhyatk/moondream2)** model, which provided detailed descriptions of the posters.
 - **Conditional Images**: We generated lineart-style conditional images for each poster using the **[`lllyasviel/ControlNet-v1-1-nightly`](https://github.com/lllyasviel/ControlNet-v1-1-nightly/blob/main/README.md#controlnet-11-lineart)** model. These conditional images guided the AI on text placement.
-- **Final Dataset**: The dataset is available **[here](https://huggingface.co/datasets/fhai50032/ControlNet-Poster)**.
-
-### 4. **🧠 Model Training**
-Our AI model was trained using:
-- The **`FLUX.1-dev`** model for image generation.
-- Lineart-style conditional images to learn text placement.
-- Advanced training techniques to optimize text styling, placement, and accuracy.
+- 
+## Structure of the dataset:
+| **🖼️ image**         | **✍️ caption**                                                                 | **🖊️ conditional image**      |
+|-----------------------|-----------------------------------------------------------------------------|-------------------------------|
+| Movie poster image    | A description of the poster, including characters, text, colors, etc.      | Lineart representation        |
 
 ---
 
+- **Final Dataset**: you can view the dataset **[here](https://huggingface.co/datasets/fhai50032/ControlNet-Poster)**.
+
+### 4. **🧠 Model Training**
+
+We've successfully trained the model on a **small batch** of our dataset using an **NVIDIA A100 GPU**. Although the model is not fully advanced(Due to GPU limitations), yet it is capable of placing text within images with a basic level of aesthetic appeal.
+---
 # TypeScript
 ```bash 
 [!accelerate launch train_controlnet_flux.py \
@@ -70,26 +74,22 @@ Our AI model was trained using:
     --push_to_hub]
 ```
 
-## 🔍 Training Results
+# 🔍 Training Results
 
-We successfully trained the model on a **small batch** of our dataset using an **NVIDIA A100 GPU**. Although the model is not pure perfect, still it is capable of placing text within images with a basic level of aesthetic appeal.
-
-## 🔍 Training Results
-
-## 📉 Loss Graph
+## **📉 Loss Graph**
 The training loss over 250 steps with :
 🔵 as previous loss
 🟢 as new loss 
 
 ![img](test_imgs/loss.jpg)
 
-#### 🟢 Learning Rate
+## **🧭 Learning Rate**
 The learning rate progression during training:
 
 ![Learning Rate Graph](test_imgs/learning_rate.jpg)
 
 
-### ✨ Initial Generated Results
+### ✨ Generated Results
 The model generated the following results based on early training:
 ```
 link="https://csvtu.ac.in/ew/pics/DigiVarsity.png"
@@ -115,25 +115,14 @@ load_image("image.jpg")
 ![Output](test_imgs/output.png)  
 
 ### Observations:
-1. **Text Placement**: The model learned basic text placement but required further refinement for complex layouts.
-2. **Visual Appeal**: The generated images aligned with the prompts but needed improvements in text styling and complexity.
+1. **Text Placement**: The model has learned a basic level of text placement (but requires further refinement for complex layouts).
+2. **Visual Appeal**: The generated images aligned with the prompts but need improvements in text styling and complexity.
 3. **Next Focus**: Extended training and dataset expansion aimed to enhance output quality.
 
----
-
-## Dataset Structure:
-| **🖼️ image**         | **✍️ caption**                                                                 | **🖊️ conditional image**      |
-|-----------------------|-----------------------------------------------------------------------------|-------------------------------|
-| Movie poster image    | A description of the poster, including characters, text, colors, etc.      | Lineart representation        |
-
----
-
 ## 🔮 Next Steps
-
 1. Train the model further using the full dataset for improved performance.
 2. Fine-tune the model to handle unstructured text formats with greater precision.
 3. Optimize for visually stunning and error-free text placement in generated images.
-
 ---
 
 ## 🛠️ Tools & Frameworks

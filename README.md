@@ -24,18 +24,17 @@ Our project tackles these challenges by combining **state-of-the-art AI models**
 ## ⚙️ Approach
 
 ### 1. **🎥 Image Generation**
-We will use **[`black-forest-labs/FLUX.1-dev`](https://huggingface.co/black-forest-labs/FLUX.1-dev)** model for **image generation**. This serves as the foundation for creating visually stunning movie poster-like images.
+We will use **[`black-forest-labs/FLUX.1-dev`](https://huggingface.co/black-forest-labs/FLUX.1-dev)** model for **image generation**. This serves as the foundation for creating visually stunning poster-like images.
 
 ### 2. **🔧 Conditional Image Control**
 To control the image parameters (such as Resolution, Strength, DDIM sampling, seed, etc.), we use the **[`lllyasviel/ControlNet`](https://github.com/lllyasviel/ControlNet)** framework. ControlNet ensures that the AI understands the layout constraints required for text Understanding.
 
 ### 3. **🛠️ Data Collection and Preprocessing**
 We curated our dataset using the following steps:
-- **Data Collection**: Extracted thousands of movie poster images from various sources using techniques like search and web scraping and performed operations like removal of outliers, null entries and  invalid image.
+- **Data Collection**: Extracted thousands of poster images from various sources using techniques like search and web scraping and performed operations like removal of outliers, null entries and  invalid image.
 - **Captions Generation**: Captions were automatically generated for each image using the **[`vikhyatk/moondream2`](https://huggingface.co/vikhyatk/moondream2)** model, which provided detailed descriptions of the posters.
 - **Conditional Images**: We generated lineart-style conditional images for each poster using the **[`lllyasviel/ControlNet-v1-1-nightly`](https://github.com/lllyasviel/ControlNet-v1-1-nightly/blob/main/README.md#controlnet-11-lineart)** model. These conditional images will play a key role during training by guiding the AI on text placement.
-- **Final Dataset**: <a href="https://huggingface.co/datasets/fhai50032/ControlNet-Poster">Here</a> is the Final dataset so formed.
-
+- **Final Dataset**: You can View the Final dataset at  **<a href="https://huggingface.co/datasets/fhai50032/ControlNet-Poster">Here</a>**.
 ### 4. **🧠 Model Training**
 Our AI model will:
 - Learn to generate images using the **`FLUX.1-dev`** model.

@@ -45,8 +45,8 @@ Our AI model was trained using:
 ---
 
 # TypeScript
-
-`[!accelerate launch train_controlnet_flux.py \
+```bash 
+[!accelerate launch train_controlnet_flux.py \
     --pretrained_model_name_or_path="black-forest-labs/FLUX.1-dev" \
     --dataset_name="fhai50032/ControlNet-Poster" \
     --conditioning_image_column="conditional_image" \
@@ -67,7 +67,8 @@ Our AI model was trained using:
     --checkpointing_steps 100 \
     --max_train_samples 3000 \
     --use_adafactor \
-    --push_to_hub]`
+    --push_to_hub]
+```
 
 ## 🔍 Training Results
 
@@ -90,7 +91,7 @@ The learning rate progression during training:
 
 ### ✨ Initial Generated Results
 The model generated the following results based on early training:
-
+```
 link="https://csvtu.ac.in/ew/pics/DigiVarsity.png"
 image=load_image(link)
 control_image = processor(image)
@@ -109,7 +110,7 @@ image2 = pipe(
 ).images[0]
 image2.save("image.jpg")
 load_image("image.jpg")
-
+```
 
 ![Output](test_imgs/output.png)  
 

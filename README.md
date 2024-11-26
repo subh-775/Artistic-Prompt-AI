@@ -103,12 +103,14 @@ load_image("image.jpg")
 3. Optimize for visually stunning and error-free text placement in generated images.
 ---
 
-## 🛠️ Tools & Frameworks
+## 🛠️ Tools & Models 
 
 - **Image Generation**: [`FLUX.1-dev`](https://huggingface.co/black-forest-labs/FLUX.1-dev)  
 - **Control Parameters**: [`ControlNet`](https://github.com/lllyasviel/ControlNet)  
 - **Caption Generation**: [`moondream2`](https://huggingface.co/vikhyatk/moondream2)  
 - **Conditional Image Generation**: [`Lineart`](https://github.com/lllyasviel/ControlNet-v1-1-nightly/blob/main/README.md#controlnet-11-lineart)
+- **Text Encoder**:[`FLUX.1-dev-4bit`](https://huggingface.co/HighCWu/FLUX.1-dev-4bit)
+- **Unified Controlnet Model**:[`FLUX.1-dev-ControlNet-Union-Pro`](https://huggingface.co/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro)
 
 ---
 
@@ -128,12 +130,11 @@ More information about the project is available at [**subh-775**](https://huggin
 
 ## 🏆 Acknowledgements
 
-Special thanks to:
+Special thanks to various authors :
 - **[fhai50032](https://github.com/IsNoobgrammer)** for his valuable contributions to this project.
 - **`Black Forest Labs`** for the **`FLUX.1-dev`** model.  
 - **`lllyasviel`** for ControlNet and Annotators, which made conditional image generation possible.  
 - **`vikhyatk`** for the **`moondream2`** model, enabling automated caption generation.
-
 ---
 
 ## 📜 License

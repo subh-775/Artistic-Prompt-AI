@@ -34,7 +34,7 @@ We curated our dataset using the following steps:
 - **Data Collection**: Extracted thousands of poster images from various sources and performed operations like removing outliers, null entries, and invalid images.
 - **Captions Generation**: Captions were automatically generated for each image using the **[`vikhyatk/moondream2`](https://huggingface.co/vikhyatk/moondream2)** model, which provided detailed descriptions of the posters.
 - **Conditional Images**: We generated lineart-style conditional images for each poster using the **[`lllyasviel/ControlNet-v1-1-nightly`](https://github.com/lllyasviel/ControlNet-v1-1-nightly/blob/main/README.md#controlnet-11-lineart)** model. These conditional images guided the AI on text placement.
-- 
+
 ## Structure of the dataset:
 | **🖼️ image**         | **✍️ caption**                                                                 | **🖊️ conditional image**      |
 |-----------------------|-----------------------------------------------------------------------------|-------------------------------|
@@ -47,6 +47,7 @@ We curated our dataset using the following steps:
 ### 4. **🧠 Model Training**
 
 We've successfully trained the model on a **small batch** of our dataset using an **NVIDIA A100 GPU**. Although the model is not fully advanced(Due to GPU limitations), yet it is capable of placing text within images with a basic level of aesthetic appeal.
+
 ---
 # TypeScript
 ```bash 

@@ -53,7 +53,7 @@ We successfully trained the model on a **small batch** of the dataset using an *
 #### 📉 Loss Graph
 The training loss over 250 steps:
 
-![img](github_page/he.png)
+![img](test_imgs/loss.jpg)
 
 #### 🟢 Learning Rate
 The learning rate progression during training:

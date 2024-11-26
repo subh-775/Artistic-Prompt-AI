@@ -4,17 +4,17 @@
 
 # 🎨 AI-Powered Poster Generator
 
-We designed a machine learning model capable of generating images that **accurately incorporated specified text or lettering within the image**. Existing image-generating models often struggled with proper text placement, either misplacing the text or introducing spelling errors. Our goal was to train the model to master the art of **placing text accurately and aesthetically within generated images**. This innovation enabled the seamless creation of visually appealing outputs such as **poster designs** and **template fills**, all from a single prompt.
+We've designed a machine learning model capable of generating images that **accurately incorporated specified text or lettering within the image**. Existing image-generating models often struggle with proper text placement, either misplacing the text or introducing spelling errors. Our goal is to train the model to master the art of **placing text accurately and aesthetically within generated images**. This innovation enables the seamless creation of visually appealing outputs such as **poster designs** and **template fills**, all from a single prompt.
 
 ---
 
 ## 🚀 Motivation
 
-Despite advancements in AI image generation, there were **no large language models (LLMs)** or image-generating models capable of achieving perfect text placement in images like movie posters. Existing models often:
-- Made **mistakes in text placement**, leading to poor visual aesthetics.
-- Introduced **spelling or formatting errors** in the text.  
+Despite advancements in AI image generation, there are **no large language models (LLMs)** or image-generating models capable of achieving perfect text placement in images like movie posters. Existing models often:
+- Make **mistakes in text placement**, leading to poor visual aesthetics.
+- Introducing **spelling or formatting errors** in the text.  
 
-Our project tackled these challenges by combining **state-of-the-art AI models** and a carefully curated training pipeline to develop a model that excelled in:
+Our project tackles these challenges by combining **state-of-the-art AI models** and a carefully curated training pipeline to develop a model that excels in:
 1. Generating high-quality images.
 2. Accurately placing text in unstructured, visually appealing ways.
 3. Maintaining spelling and stylistic integrity.
@@ -53,7 +53,7 @@ We successfully trained the model on a **small batch** of the dataset using an *
 #### 📉 Loss Graph
 The training loss over 250 steps:
 
-![Loss Graph](loss_graph.jpg)
+![img](github_page/he.png)
 
 #### 🟢 Learning Rate
 The learning rate progression during training:

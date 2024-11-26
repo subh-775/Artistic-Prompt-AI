@@ -44,9 +44,34 @@ Our AI model was trained using:
 
 ---
 
+## TypeScript
+
+`!accelerate launch train_controlnet_flux.py \
+    --pretrained_model_name_or_path="black-forest-labs/FLUX.1-dev" \
+    --dataset_name="fhai50032/ControlNet-Poster" \
+    --conditioning_image_column="conditional_image" \
+    --image_column="image" \
+    --caption_column="caption" \
+    --output_dir="text-controlnet" \
+    --mixed_precision="bf16" \
+    --resolution=512 \
+    --learning_rate=3e-5 \
+    --max_train_steps=3000 \
+    --train_batch_size=2 \
+    --gradient_accumulation_steps=3 \
+    --report_to="wandb" \
+    --num_double_layers=4 \
+    --num_single_layers=2 \
+    --seed=42 \
+    --lr_scheduler "cosine" \
+    --checkpointing_steps 100 \
+    --max_train_samples 3000 \
+    --use_adafactor \
+    --push_to_hub`
+
 ## 📈 Progress Achieved
 
-We successfully trained the model on a **small batch** of the dataset using an **NVIDIA A100 GPU**. Although the model was not perfect yet, it was capable of placing text within images with a basic level of aesthetic appeal.
+We successfully trained the model on a **small batch** of our dataset using an **NVIDIA A100 GPU**. Although the model is not pure perfect, still it is capable of placing text within images with a basic level of aesthetic appeal.
 
 ### 🔍 Training Results
 
@@ -58,15 +83,33 @@ The training loss over 250 steps:
 #### 🟢 Learning Rate
 The learning rate progression during training:
 
-![Learning Rate Graph](lr_graph.jpg)
+![Learning Rate Graph](test_imgs/learning_rate.jpg)
+
 
 ### ✨ Initial Generated Results
 The model generated the following results based on early training:
-- **Input Prompt:** "Create a movie poster with the title 'Galactic Warfare' and colorful text."
-- **Generated Output:**
 
-![Generated Image 1](result_image_1.jpg)  
-![Generated Image 2](result_image_2.jpg)
+`link="https://csvtu.ac.in/ew/pics/DigiVarsity.png"
+image=load_image(link)
+control_image = processor(image)
+controlnet_conditioning_scale = .65
+width, height = control_image.size
+prompt = 'print a poster for a website with text "DIGIVARSITY" , make background as sunset mountain college '
+image2 = pipe(
+    prompt,
+    control_image=control_image,
+    control_mode=0,
+    width=width,
+    height=height,
+    controlnet_conditioning_scale=controlnet_conditioning_scale,
+    num_inference_steps=38,
+    guidance_scale=3.2,
+).images[0]
+image2.save("image.jpg")
+load_image("image.jpg")`
+
+
+![Output](test_imgs/output.png)  
 
 ### Observations:
 1. **Text Placement**: The model learned basic text placement but required further refinement for complex layouts.

@@ -49,7 +49,7 @@ We curated our dataset using the following steps:
 We've successfully trained the model on a **small batch** of our dataset using an **NVIDIA A100 GPU**. While the model is not yet fully advanced (due to GPU limitations), it is capable of placing text within images with a basic level of aesthetic appeal.
 
 ---
-##Training Parameters
+## Training Parameters
 
 
 ```bash

@@ -95,7 +95,6 @@ load_image("image.jpg")
 ### Observations:
 1. **Text Placement**: The model has learned a basic level of text placement (but requires further refinement for complex layouts).
 2. **Visual Appeal**: The generated images aligned with the prompts but need improvements in text styling and complexity.
-3. **Next Focus**: Extended training and dataset expansion aimed to enhance output quality.
 
 ## 🔮 Next Steps
 1. Train the model further using the full dataset for improved performance.

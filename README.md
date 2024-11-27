@@ -49,6 +49,33 @@ We curated our dataset using the following steps:
 We've successfully trained the model on a **small batch** of our dataset using an **NVIDIA A100 GPU**. While the model is not yet fully advanced (due to GPU limitations), it is capable of placing text within images with a basic level of aesthetic appeal.
 
 ---
+##Training Parameters
+
+
+```bash
+!accelerate launch train_controlnet_flux.py \
+    --pretrained_model_name_or_path="black-forest-labs/FLUX.1-dev" \
+    --dataset_name="fhai50032/ControlNet-Poster" \
+    --conditioning_image_column="conditional_image" \
+    --image_column="image" \
+    --caption_column="caption" \
+    --output_dir="text-controlnet" \
+    --mixed_precision="bf16" \
+    --resolution=512 \
+    --learning_rate=3e-5 \
+    --max_train_steps=3000 \
+    --train_batch_size=2 \
+    --gradient_accumulation_steps=3 \
+    --report_to="wandb" \
+    --num_double_layers=4 \
+    --num_single_layers=2 \
+    --seed=42 \
+    --lr_scheduler "cosine" \
+    --checkpointing_steps 100 \
+    --max_train_samples 3000 \
+    --use_adafactor \
+    --push_to_hub
+```
 
 ## 🔍 Training Results
 

@@ -94,6 +94,7 @@ The learning rate progression during training:
 ---
 
 ## ✨ Generated Results
+You can view some files at : <a href="https://huggingface.co/fhai50032/flux-controlnet-1000/tree/main">click here</a>
 The model generated the following results based on early training:
 
 ```python

@@ -121,6 +121,8 @@ load_image("image.jpg")
 
 ![Output](test_imgs/output.png)  
 
+
+
 ```python
 image=load_image("https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/QELKKPYNDBIVVHPL5ON7DG7NPQ.jpg")
 control_image = processor(image)

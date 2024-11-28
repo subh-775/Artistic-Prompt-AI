@@ -80,8 +80,8 @@ We've successfully trained the model on a **small batch** of our dataset using a
 ## 🔍 Training Results
 
 ### **📉 Loss Graph**
--Loss functions used: MSE(Mean Squared error) and NLL(Negative Log Likelihood)
--The training loss over 250 steps:
+- Loss functions used: MSE(Mean Squared error) and NLL(Negative Log Likelihood)
+- The training loss over 250 steps:
 - 🔵 Previous loss
 - 🟢 New loss 
 

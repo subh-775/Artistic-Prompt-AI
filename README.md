@@ -52,7 +52,7 @@ We've successfully trained the model on a **small batch** of our dataset using a
 ## Training Parameters
 
 
-```bash
+```python
 !accelerate launch train_controlnet_flux.py \
     --pretrained_model_name_or_path="black-forest-labs/FLUX.1-dev" \
     --dataset_name="fhai50032/ControlNet-Poster" \
@@ -95,7 +95,7 @@ The learning rate progression during training:
 ---
 
 ## ✨ Generated Results
-You can view some files at : <a href="https://huggingface.co/fhai50032/flux-controlnet-1000/tree/main">click here</a>
+You can view model files at : <a href="https://huggingface.co/fhai50032/flux-controlnet-1000/tree/main">here</a>
 - The model generated the following results based on early training:
 
 ```python
@@ -153,7 +153,8 @@ load_image("image.jpg")
 ## 🔮 Next Steps
 1. Train the model further using the full dataset for improved performance.
 2. Fine-tune the model to handle unstructured text formats with greater precision.
-3. Optimize for visually stunning and error-free text placement in generated images.
+3. We need to create a new loss function required for understanding error rate of text between original and generated output.
+4. Optimize for visually stunning and error-free text placement in generated images.
 ---
 
 ## 🛠️ Tools & Models  

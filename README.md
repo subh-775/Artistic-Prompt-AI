@@ -161,6 +161,8 @@ Special thanks to various authors :
 - **`Black Forest Labs`** for the **`FLUX.1-dev`** model.  
 - **`lllyasviel`** for ControlNet and Annotators, which made conditional image generation possible.  
 - **`vikhyatk`** for the **`moondream2`** model, enabling automated caption generation.
+- **`HighCWu`** for the **`FLUX.1-dev-4bit`**.
+- **`Shakker-Labs`** for **`FLUX.1-dev-ControlNet-Union-Pro`**.
 ---
 
 ## 📜 License

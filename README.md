@@ -80,9 +80,10 @@ We've successfully trained the model on a **small batch** of our dataset using a
 ## 🔍 Training Results
 
 ### **📉 Loss Graph**
-The training loss over 250 steps:
+-Loss functions used: MSE(Mean Squared error) and NLL(Negative Log Likelihood)
+-The training loss over 250 steps:
 - 🔵 Previous loss
-- 🟢 New loss
+- 🟢 New loss 
 
 ![Loss Graph](test_imgs/loss.jpg)
 
@@ -130,7 +131,7 @@ load_image("image.jpg")
 3. Optimize for visually stunning and error-free text placement in generated images.
 ---
 
-## 🛠️ Tools & Models 
+## 🛠️ Tools & Models  
 
 - **Image Generation**: [`FLUX.1-dev`](https://huggingface.co/black-forest-labs/FLUX.1-dev)  
 - **Control Parameters**: [`ControlNet`](https://github.com/lllyasviel/ControlNet)  
@@ -138,6 +139,7 @@ load_image("image.jpg")
 - **Conditional Image Generation**: [`Lineart`](https://github.com/lllyasviel/ControlNet-v1-1-nightly/blob/main/README.md#controlnet-11-lineart)
 - **Text Encoder**:[`FLUX.1-dev-4bit`](https://huggingface.co/HighCWu/FLUX.1-dev-4bit)
 - **Unified Controlnet Model**:[`FLUX.1-dev-ControlNet-Union-Pro`](https://huggingface.co/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro)
+- **Pytorch** : Deep Learning Framework
 
 ---
 

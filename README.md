@@ -94,7 +94,7 @@ The learning rate progression during training:
 
 ---
 
-## ✨ Generated Results
+## 5. **✨ Generated Results**
 You can view model files at : <a href="https://huggingface.co/fhai50032/flux-controlnet-1000/tree/main">here</a>
 - The model generated the following results based on early training:
 
@@ -150,14 +150,14 @@ load_image("image.jpg")
 1. **Text Placement**: The model has learned a basic level of text placement (but requires further refinement for complex layouts).
 2. **Visual Appeal**: The generated images aligned with the prompts but need improvements in text styling and complexity.
 
-## 🔮 Next Steps
+## 6. **🔮 Next Steps**
 1. Train the model further using the full dataset for improved performance.
 2. Fine-tune the model to handle unstructured text formats with greater precision.
 3. We need to create a new loss function required for understanding error rate of text between original and generated output.
 4. Optimize for visually stunning and error-free text placement in generated images.
 ---
 
-## 🛠️ Tools & Models  
+## 7. **🛠️ Tools & Models**
 
 - **Image Generation**: [`FLUX.1-dev`](https://huggingface.co/black-forest-labs/FLUX.1-dev)  
 - **Control Parameters**: [`ControlNet`](https://github.com/lllyasviel/ControlNet)  

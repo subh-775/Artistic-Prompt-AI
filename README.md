@@ -121,6 +121,29 @@ load_image("image.jpg")
 
 ![Output](test_imgs/output.png)  
 
+```python
+image=load_image("https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/QELKKPYNDBIVVHPL5ON7DG7NPQ.jpg")
+control_image = processor(image)
+controlnet_conditioning_scale = .8
+width, height = control_image.size
+
+prompt = 'print a poster with text "CHAMPIONS LEAGUE" at top and "MADRID" and "FINAL" at bottom'
+
+image2 = pipe(
+    prompt,
+    control_image=control_image,
+    control_mode=0,
+    width=width,
+    height=height,
+    controlnet_conditioning_scale=controlnet_conditioning_scale,
+    num_inference_steps=38,
+    guidance_scale=2.4,
+).images[0]
+image2.save("image.jpg")
+load_image("image.jpg")
+```
+![Output](test_imgs/test_imgs/champions_league.jpg)  
+
 ### Observations:
 1. **Text Placement**: The model has learned a basic level of text placement (but requires further refinement for complex layouts).
 2. **Visual Appeal**: The generated images aligned with the prompts but need improvements in text styling and complexity.

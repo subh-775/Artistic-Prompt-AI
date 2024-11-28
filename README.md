@@ -142,7 +142,7 @@ image2 = pipe(
 image2.save("image.jpg")
 load_image("image.jpg")
 ```
-![Output](test_imgs/test_imgs/champions_league.jpg)  
+![Output](test_imgs/champions_league.jpg)  
 
 ### Observations:
 1. **Text Placement**: The model has learned a basic level of text placement (but requires further refinement for complex layouts).

@@ -98,13 +98,12 @@ The learning rate progression during training:
 - Text Placement: The model demonstrates basic text placement but requires further refinement for complex layouts.
 - Visual Quality: Image quality is high, but further training is needed to improve text stylization and integration.
   
-##✨ Next Steps
-
+## ✨ Next Steps
 - Expand training to the full dataset for better accuracy.
 - Develop new loss functions to better handle text placement errors.
 - Train the model for multilingual text support.
 - Improve text stylization and unstructured layout handling.
-- 
+  
 ## 🛠️ Tools & Models
 - Framework : `PyTorch`
 - Image Generation: `FLUX.1-dev`
@@ -120,7 +119,6 @@ The learning rate progression during training:
 - or Submit a pull request with your changes or suggestions.
   
 ## 🏆 Acknowledgements
-
 - **[fhai50032](https://github.com/IsNoobgrammer)** for his valuable contributions to this project.
 - **`Black Forest Labs`** for the **`FLUX.1-dev`** model.  
 - **`lllyasviel`** for ControlNet and Annotators, which made conditional image generation possible.  

@@ -3,11 +3,6 @@
 </p>
 
 <h1 align="center">🎨 AI-Powered Poster Generator</h1>
-
-<p align="center">
-    <b>Transform your imagination into stunning visuals with perfect text placement! 🎥🎨</b>
-</p>
-
 ---
 
 ## 🌟 **Introduction**

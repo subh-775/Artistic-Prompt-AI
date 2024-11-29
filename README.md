@@ -92,7 +92,7 @@ The learning rate progression during training:
 ![Output](test_imgs/output.png) 
 
 `Prompt: "Print a poster with text 'CHAMPIONS LEAGUE' at the top, and 'MADRID' and 'FINAL' at the bottom."`
-![Output](test_imgs/champions_league.jpg) 
+![Output](test_imgs/champions.png) 
 
 ## Observations
 - Text Placement: The model demonstrates basic text placement but requires further refinement for complex layouts.

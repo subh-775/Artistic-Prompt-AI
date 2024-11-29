@@ -3,7 +3,6 @@
 </p>
 
 <h1 align="center">🎨 AI-Powered Poster Generator</h1>
----
 
 ## 🌟 **Introduction**
 

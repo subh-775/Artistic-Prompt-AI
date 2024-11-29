@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://readme-typing-svg.demolab.com/?lines=🚀%20Teaching%20Diffusion%20Models%20to%20Write;&font=Fira%20Code&align=center&width=1000&height=80&color=f2m358&vCenter=true&pause=2000&size=40" />
+    <img src="https://readme-typing-svg.demolab.com/?lines=🚀%20Teaching%20Diffusion%20Models%20to%20Write;&font=Fira%20Code&align=center&width=1000&height=80&color=f2m358&vCenter=true&pause=4000&size=40" />
 </p>
 
 <h1 align="center">🎨 AI-Powered Poster Generator</h1>

@@ -71,7 +71,7 @@ We trained the model using the following parameters:
     --push_to_hub
 ```
 ## Training Highlights
-- Hardware: Trained on an NVIDIA A100 GPU
+- **Hardware:** Trained on an **NVIDIA A100** GPU
 ### **📉 Loss Graph**
 - Loss Functions:
 - MSE (Mean Squared Error)

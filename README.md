@@ -11,12 +11,8 @@
 ---
 
 ## 🌟 **Introduction**
-Our **AI-Powered Poster Generator** is a machine learning model designed to generate **visually stunning posters** with **accurately placed text**. Existing models struggle with issues like:
-- Misplaced text
-- Spelling errors
-- Poor formatting
 
-Our project addresses these challenges by combining **state-of-the-art AI models** and a carefully crafted training pipeline. From movie posters to promotional banners, this innovation empowers you to create highly aesthetic and textually accurate visuals!
+We've designed a machine learning model capable of generating images that **accurately incorporate specified text or lettering within the image**. Existing image-generation models often struggle with proper text placement, either misplacing the text or introducing spelling errors. Our goal is to train the model to master the art of **placing text accurately and aesthetically within generated images**. This innovation enables the seamless creation of visually appealing outputs such as **poster designs** and **template fills**, all from a single prompt.
 
 ---
 
@@ -54,7 +50,7 @@ Using **[`ControlNet`](https://github.com/lllyasviel/ControlNet)**, we ensure th
 ## 🧠 **Model Training**
 
 ### **Training Pipeline**
-We trained the model using the following command:
+We trained the model using the following parameters:
 
 ```python
 !accelerate launch train_controlnet_flux.py \
@@ -81,20 +77,28 @@ We trained the model using the following command:
     --push_to_hub
 ```
 ## Training Highlights
+- Hardware: Trained on an NVIDIA A100 GPU
+### **📉 Loss Graph**
 - Loss Functions:
 - MSE (Mean Squared Error)
 - NLL (Negative Log-Likelihood)
-- Hardware: Trained on an NVIDIA A100 GPU
-- 
-## 🔍 Results
-- Example Outputs
-`Prompt: "Create a poster for a website with text 'DIGIVARSITY', background as sunset mountain college."`
+- 🔵 Previous loss
+- 🟢 New loss 
+![Loss Graph](test_imgs/loss.jpg)
 
-Generated Image: ![Output](test_imgs/output.png) 
+### **🧭 Learning Rate**
+The learning rate progression during training:
+
+![Learning Rate Graph](test_imgs/learning_rate.jpg)
+
+---
+  
+## 🔍 Results
+`Prompt: "Create a poster for a website with text 'DIGIVARSITY', background as sunset mountain college."`
+![Output](test_imgs/output.png) 
 
 `Prompt: "Print a poster with text 'CHAMPIONS LEAGUE' at the top, and 'MADRID' and 'FINAL' at the bottom."`
-
-Generated Image: ![Output](test_imgs/champions_league.jpg) 
+![Output](test_imgs/champions_league.jpg) 
 
 ## Observations
 - Text Placement: The model demonstrates basic text placement but requires further refinement for complex layouts.

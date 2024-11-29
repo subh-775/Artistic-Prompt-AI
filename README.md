@@ -112,10 +112,13 @@ The learning rate progression during training:
 - Improve text stylization and unstructured layout handling.
 - 
 ## 🛠️ Tools & Models
+- Framework : `PyTorch`
 - Image Generation: `FLUX.1-dev`
 - Control Parameters: `ControlNet`
 - Caption Generation: `moondream2`
 - Conditional Image Generation: `Lineart`
+- Text Encoding:`FLUX.1-dev-4bit`
+- Unified Controlnet: `FLUX.1-dev-ControlNet-Union-Pro`
   
 ## 🤝 Contributing
 - We welcome contributions! To contribute:
@@ -123,12 +126,18 @@ The learning rate progression during training:
 - or Submit a pull request with your changes or suggestions.
   
 ## 🏆 Acknowledgements
-fhai50032 for contributions and dataset curation.
-Black Forest Labs for the FLUX.1-dev model.
-lllyasviel for ControlNet.
-vikhyatk for moondream2.
+
+- **[fhai50032](https://github.com/IsNoobgrammer)** for his valuable contributions to this project.
+- **`Black Forest Labs`** for the **`FLUX.1-dev`** model.  
+- **`lllyasviel`** for ControlNet and Annotators, which made conditional image generation possible.  
+- **`vikhyatk`** for the **`moondream2`** model, enabling automated caption generation.
+- **`HighCWu`** for the **`FLUX.1-dev-4bit`**.
+- **`Shakker-Labs`** for **`FLUX.1-dev-ControlNet-Union-Pro`**.
+
+---
 
 ## 📜 License
+
 ```text
 Apache License 2.0
 

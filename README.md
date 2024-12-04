@@ -89,6 +89,7 @@ The learning rate progression during training:
   
 ## 🔍 Results
 You can view the models instructions at : <a href ="https://huggingface.co/fhai50032/flux-controlnet-1000">Here</a>
+
 `Prompt: "Create a poster for a website with text 'DIGIVARSITY', background as sunset mountain college."`
 ![Output](test_imgs/output.png) 
 

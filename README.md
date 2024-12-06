@@ -97,8 +97,8 @@ You can view the models instructions at : <a href ="https://huggingface.co/fhai5
 ![Output](test_imgs/champions.png) 
 
 ## Observations
-- Text Placement: The model demonstrates basic text placement but requires further refinement for complex layouts.
-- Visual Quality: Image quality is high, but further training is needed to improve text stylization and integration.
+- **Text Placement:** The model demonstrates basic text placement but requires further refinement for complex layouts.
+- **Visual Quality:** Image quality is high, but further training is needed to improve text stylization and integration.
   
 ## ✨ Next Steps
 - Expand training to the full dataset for better accuracy.

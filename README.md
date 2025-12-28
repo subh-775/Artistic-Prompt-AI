@@ -4,6 +4,8 @@
 
 <h1 align="center">🎨 AI-Powered Poster Generator</h1>
 
+Find the collection at: [HuggingFace](https://huggingface.co/collections/Subh775/artistic-prompt-ai)
+
 ## 🌟 **Introduction**
 
 We've designed a machine learning model capable of generating images that **accurately incorporate specified text or letter placement within the image**. Existing image-generation models often struggle with proper text placement, either misplacing the text or introducing spelling errors. Our goal is to train the model to master the art of **placing text accurately and aesthetically within generated images**. This innovation enables the seamless creation of visually appealing outputs such as **poster designs** and **template fills**, all from a single prompt.
